@@ -7,3 +7,4 @@ SELECT * FROM animals WHERE name = 'Agumon' OR  name = 'Pikachu';
 SELECT * FROM animals WHERE neutered = true;
 SELECT * FROM animals WHERE name != 'Gabumon';
 SELECT * FROM animals WHERE weight_kg BETWEEN 10.5 AND 17.4;
+SELECT * FROM animals WHERE weight_kg > 10.5;
