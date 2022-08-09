@@ -27,7 +27,6 @@ UPDATE animals SET weight_kg = weight_kg * -1 WHERE weight_kg < 0;
 
 COMMIT TRANSACTION;
 
-
 -- AGGREGATE--------------------------------------------------------
 
 SELECT COUNT(*) FROM animals;
