@@ -12,3 +12,10 @@ INSERT INTO animals(name, date_of_birth, escape_attempts, neutered, weight_kg) V
 INSERT INTO animals(name, date_of_birth, escape_attempts, neutered, weight_kg) VALUES('Boarmon', '07-06-2005', 7, true, 20.4);
 INSERT INTO animals(name, date_of_birth, escape_attempts, neutered, weight_kg) VALUES('Blossom', '13-10-1998', 3, true, 17);
 INSERT INTO animals(name, date_of_birth, escape_attempts, neutered, weight_kg) VALUES('Ditto', '14-05-2022', 4, true, 22);
+
+INSERT INTO persons(first_name, last_name, age, country) VALUES('Ridwan', 'Diallo', 27, 'Senegal');
+INSERT INTO persons(first_name, last_name, age, country) VALUES('Ali', 'Ba', 30, 'Gambi');
+INSERT INTO persons(first_name, last_name, age, country) VALUES('Abdoul', 'Diallo', 29, 'Senegal');
+INSERT INTO persons(first_name, last_name, age, country) VALUES('Diang', 'Diallo', 27, 'Senegal');
+INSERT INTO persons(first_name, last_name, age, country) VALUES('Cherif', 'Diallo', 31, 'Senegal');
+INSERT INTO persons(first_name, last_name, age, country) VALUES('Alpa Omar', 'Diallo', 17, 'Senegal');
