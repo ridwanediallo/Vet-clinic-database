@@ -8,21 +8,22 @@ CREATE TABLE animals(
   escape_attempts      INT,
   neutered             boolean,
   weight_kg            decimal,
-  species              VARCHAR(100)
+  species_id           INT,
+  owner_id             INT,
   PRIMARY KEY(id)
 );
 
 
 CREATE TABLE owners(
-  id            INT GENERATED ALWAYS AS IDENTITY,
+  owner_id             INT GENERATED ALWAYS AS IDENTITY,
   full_name            VARCHAR(100),
   age                  INT,
-  PRIMARY KEY(id)
+  PRIMARY KEY(owner_id)
 );
 
 CREATE TABLE species(
-  id            INT GENERATED ALWAYS AS IDENTITY,
+  species_id            INT GENERATED ALWAYS AS IDENTITY,
   name            VARCHAR(100),
-  PRIMARY KEY(id)
+  PRIMARY KEY(species_id)
 );
 
