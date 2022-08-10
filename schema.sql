@@ -20,3 +20,9 @@ CREATE TABLE owners(
   PRIMARY KEY(id)
 );
 
+CREATE TABLE species(
+  id            INT GENERATED ALWAYS AS IDENTITY,
+  name            VARCHAR(100),
+  PRIMARY KEY(id)
+);
+
