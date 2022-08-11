@@ -28,3 +28,19 @@ INSERT INTO owners(full_name, age) VALUES('Jodie Whittaker', 38);
 
 INSERT INTO species(name) VALUES('Pokemon');
 INSERT INTO species(name) VALUES('Digimon');
+
+-- ANIMALS OWNERS-----------------------------------------------------------------------------
+UPDATE animals SET owner_id = 1 WHERE id = 1;
+UPDATE animals SET owner_id = 2 WHERE id = 2;
+UPDATE animals SET owner_id = 2 WHERE id = 3;
+UPDATE animals SET owner_id = 3 WHERE id = 4;
+UPDATE animals SET owner_id = 3 WHERE id = 6;
+UPDATE animals SET owner_id = 4 WHERE id = 5;
+UPDATE animals SET owner_id = 4 WHERE id = 7;
+UPDATE animals SET owner_id = 4 WHERE id = 10;
+UPDATE animals SET owner_id = 5 WHERE id = 9;
+UPDATE animals SET owner_id = 5 WHERE id = 8;
+
+-- ANIMALS SPECIES-----------------------------------------------------------------------------
+UPDATE animals SET species_id = 1 WHERE name LIKE '%mon%';
+UPDATE animals SET species_id = 2 WHERE species_id IS NULL;

@@ -8,8 +8,8 @@ CREATE TABLE animals(
   escape_attempts      INT,
   neutered             boolean,
   weight_kg            decimal,
-  species_id           INT,
-  owner_id             INT,
+  species_id           INT REFERENCES species(specie),
+  owner_id             INT REFERENCES owners(owner_id),
   PRIMARY KEY(id)
 );
 
