@@ -23,7 +23,27 @@ CREATE TABLE owners(
 
 CREATE TABLE species(
   species_id            INT GENERATED ALWAYS AS IDENTITY,
-  name            VARCHAR(100),
+  name                  VARCHAR(100),
   PRIMARY KEY(species_id)
 );
+
+CREATE TABLE vets(
+  vets_id                    INT GENERATED ALWAYS AS IDENTITY,
+  name                       VARCHAR(100),
+  age                        INT,
+  date_of_graduation         date,
+  PRIMARY KEY(vets_id)
+);
+
+CREATE TABLE specializations(
+  species_id           INT REFERENCES species(species_id),
+  vets_id              INT REFERENCES vets(vets_id)
+);
+
+CREATE TABLE visits(
+  id                   INT REFERENCES animals(id),
+  vets_id              INT REFERENCES vets(vets_id),
+);
+ALTER TABLE visits
+ADD COLUMN visit_date  date;
 
